@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i");
+body {
+  background: #016FB9;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #FAFAFA;
+  margin: 0;
+  padding: 0; }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+  letter-spacing: .2px; }
+  .header img {
+    margin-left: 10px; }
+
+.instructions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px; }
+  .instructions p {
+    width: 25%;
+    text-align: center;
+    font-size: .9em;
+    color: #C0C0C0; }
+
+.radio-button-section {
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.homeBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px; }
+  .homeBtn button {
+    padding: 10px 22px;
+    border-radius: 2px;
+    margin-left: 4px;
+    border: none;
+    background: #a8a8a8;
+    color: #FFF;
+    -webkit-box-shadow: 1px 1px 4px #333;
+            box-shadow: 1px 1px 4px #333; }
+
+.loading {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .loading .loadingIcon {
+    -webkit-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+            transform: rotate(20deg);
+    -webkit-animation: rotateLoading 1.5s ease-in-out infinite;
+            animation: rotateLoading 1.5s ease-in-out infinite; }
+@-webkit-keyframes rotateLoading {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+@keyframes rotateLoading {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+.error {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .error p {
+    margin-top: 20px; }
+  .error button {
+    padding: 10px 22px;
+    border-radius: 2px;
+    margin-left: 4px;
+    border: none;
+    background: #a8a8a8;
+    color: #FFF;
+    -webkit-box-shadow: 1px 1px 4px #333;
+            box-shadow: 1px 1px 4px #333;
+    margin-top: 30px;
+    cursor: pointer; }
