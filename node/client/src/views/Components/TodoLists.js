@@ -1,12 +1,6 @@
 import React, {Component} from 'react'; 
   
 class TodoLists extends Component { 
-    constructor(props) 
-    { 
-        super(props); 
-        this.state = { items : [] }; 
-    } 
-
     render() 
     { 
         return (

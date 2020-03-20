@@ -4,11 +4,22 @@ import { connect } from 'react-redux';
 import { TodoLists } from '../Components/index';
 
 export class Home extends React.Component {
+  state = {
+    todoLists: []
+  };
 
   constructor(props) {
     super(props);
   }
 
+  componentDidMount() {
+    fetch('/todoLists')
+      .then(res => res.json())
+      .then((data) => {
+          this.setState({ todoLists: data })
+      })
+      .catch(console.log)
+  }
 
   componentDidUpdate = (prevProps) => {
   }
